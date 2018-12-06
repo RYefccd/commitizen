@@ -48,7 +48,7 @@ class BaseCommitizen(with_metaclass(ABCMeta)):
         f.write(message.encode('utf-8'))
         f.close()
 
-        c = delegator.run('git commit -a -F {0}'.format(f.name), block=True)
+        c = delegator.run('git commit -F {0}'.format(f.name), block=True)
         print(c.out or c.err)
 
         os.unlink(f.name)
