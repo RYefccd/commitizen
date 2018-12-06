@@ -82,13 +82,15 @@ class ConventionalCommitsCz(BaseCommitizen):
                 'type': 'input',
                 'name': 'body',
                 'message': ('Body. Motivation for the change and contrast this '
-                            'with previous behavior:\n')
+                            'with previous behavior:\n'),
+                'multiline': True
             },
             {
                 'type': 'input',
                 'name': 'footer',
                 'message': ('Footer. Information about Breaking Changes and '
-                            'reference issues that this commit closes:\n')
+                            'reference issues that this commit closes:\n'),
+                'multiline': True
             }
         ]
         return questions
