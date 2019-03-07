@@ -245,6 +245,17 @@ things that won't work, like aliases of commands, so, to commit run:
     cz commit
 
 
+本地安装使用建议:
+=================
+    安装
+    pip install -e git+ssh://git@git.gtapp.xyz/backend/g1/commitizen.git@v1.0.0#egg=commitizen
+    添加 git 子命令
+    git config --global alias.cz '!cz commit'
+    以后需要 git commit 的地方使用下列命令替换
+    git cz
+
+
+
 Todo
 ====
 
